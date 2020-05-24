@@ -39,7 +39,7 @@
  <div class="container-3">
 <h2>Challenge 3: Rock, Paper, Scissors</h2>
  <div class="flex-box-rps" id="flex-box-rps-div">
- <img id="rock" src="https://lh3.googleusercontent.com/proxy/12neC8F-WRSnxQqBEQUVsxcCQh23jc7sJXtyMracKfJIR3bFjOwgIKkZGbucnG3KGHob7hdWRNm4g_Dq7uC3r_Oi1gPkUwkYDLlB" height="150" width="150" alt="" onclick="rpsGame(this)">
+ <img id="rock" src="https://webstockreview.net/images/clipart-rock-sedimentary-rock-19.png" height="150" width="150" alt="" onclick="rpsGame(this)">
   <img id="paper" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMsAAAD4CAMAAAB1y+ICAAAAt1BMVEX///8Ah9oAAADl5eXi4uIkmd8Aj9yOxezL4fXh7vm42vKYxuxgsOXa7fmcm5r8//9JqOMAi9uBv+rn8/uy1PHR5/fv+f1vt+g2oOHC4PWezO5XqeOp0/DZFwreTUiSkZAAT3sKCwzIMz8gWX7TQER+h41edYc9ZYJNSkmJNDCGGBJhXl1wcHGzs7PT09MaGxzw8PA/P0B2gYu14vt5hIzDw8NOboRpeYia1PeKjo93d3goXYDm/P8zx6NkAAADb0lEQVR4nO3dXVMaMRTGcRpp6SvY0tLSGhRcFWVbF1SU6vf/XF1mgGE4J+PYC/Lk5Pld7Zy7/5g0nQGyjQYRZe+gmZqDUMrYpWesp0xc2RYur+QMSOkmWkqljgf+v1br3kxcpUwP3LEyRW85dtqWYUtsbMHEFkxswcQWTM+23LWb68fUW8r6/9K/V8+JtzTdcOjcapp4y5+6ZWikpXFdr7Fy9Zx6S1VON/8MpN6yLdWW09fSyCtDIKcZtFhaY2yJiy2Y2IIph5bHQ2nklSGQx0DLyRtp5JUhkJPgGuvsWq4xMQSSxX5hS1xswcQWTKGWi49S4ZUhkIvQuf9ZGnllCOQF535n4Pd/mL9AFvuFLXGxBRNbMIVa5l+kwitDIPPQuf9KGnllCCR07i963V1PA/8khkB6iwz2C1viYgsmtmAKnvstqfDKEEgO5/7ZJ2nglSGQswz2C1viYgsmtmAKtdx/FW4KfySnQO4zOPdnb4V+4ftyCmSWwX5hS1xswcQWTMFz/71Qn/s3cgokh3Pf0t/F0n5hS1xswcQWTKGW22/SwCtDILcZnPvnP4WHwj/IKZDzDPYLW+JiCya2YAq1nHXf7eoOvBwC6YY+RzZ17n8Q6nO/JadAeO5jYgsmtmDKoWXR6e1afm9cDIF0Qt8bt3Tuz79LhVeGQEK/r7S0XzYt7b/r6/qSb5k6t3lOvMXSfX2WWiytMSN7f/3r68bmF+Op/k7c0rlv6V4Fk+f+FrbsD1swsQVTDi0p3tcXuqf38Yc08soQSOgeRUtrjC1xsQUTWzDl0GLpfn5LLZbWGFviYgsmtmDKoeXil3BY+EM5BRK8c1j5TCDVzywsrTG2xMUWTGzBlEOLpc/EbZ378ksaqX6HxNJ+YUtcbMHEFkx81wAmS+8a4J3DmNiCiS2Ycmix9Jt3S+e+pTsiLO0XtsTFFkxswRS8c/hIKrwyBJLDncOzvrC8c1hOgfBdA5jYgoktmHJosfQuG0vnPt81EFcOe58tcbEFUw4tfNdAXHzXAKbn9n5VTjdZqbdcO+fK1XPiLZbu62vWLc5IS6Os19j6wr7UWxp37eb6MdUWS++st3Tuz1tS4ZUhkND3LS2e+9vYsj9swcQWTPZbKjdRpugtE1fp47ItXF7JGZBS/QPUxi4949AfrGqmRl1gRJSXf2mMYMfqZSeQAAAAAElFTkSuQmCC" alt="" height="150" width="150" alt="" onclick="rpsGame(this)">
     <img id="scissors" src="https://thumbs.dreamstime.com/z/female-hand-sign-victory-sign-peace-sign-scissors-vector-color-flat-illustration-isolated-white-background-web-83128345.jpg" alt="" height="150" width="150" alt="" onclick="rpsGame(this)">
   
@@ -69,9 +69,57 @@
 
  <div class="container-5">
    <h2>Challenge 5: Blackjack</h2>
+   <h3><span id="blackjack-result">Let's paly</span></h3>
+
+   <div class="flex-blackjack-row-1">
+    <div id="your-box">
+      <h2>You: <span id="your-blackjack-result">0</span></h2>
+    </div>
+
+    <div id="dealer-box">
+      <h2>Dealer: <span id="dealer-blackjack-result">0</span></h2>
+    </div>
+
+   </div>
+
+   <div class="flex-blackjack-row-2">
+   <div>
+     
+    <button class="btn-lg btn-primary mr-2" id="blackjack-hit-button">Hit</button>
+    <button class="btn-lg btn-warning mr-2" id="blackjack-stand-button">Stand</button>
+    <button class="btn-lg btn-danger" id="blackjack-deal-button">Deal</button>
+
+   </div>
+
+   </div>
+
+    <div class="flex-blackjack-row-3">
+      
+      <table>
+        <tr>
+
+        <th>Wins</th>
+        <th>Losses</th>
+        <th>Draws</th>
+
+        </tr>
+
+
+        <tr>
+         
+          <td><span id="wins">0</span></td>
+          <td><span id="losses">0</span></td>
+          <td><span id="draws">0</span></td>
+
+        </tr>
+
+      </table>
+
+
+    </div>
  </div>
 
 
-<script src="static/js/script.js"></script>
+<script src="static/js/script.js"></script> 
 </body>
 </html>  
